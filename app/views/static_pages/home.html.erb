@@ -1,0 +1,48 @@
+<div class="header">
+    <h3>About</h3>
+</div>
+
+
+<div class="logo">
+    <h1>Crypto 200</h1>
+    <p>The 200 Largest Crypto Assests Indexed</p>
+</div>
+
+<div class="crypto">
+<% if crypto_two_hundred > 0 %>
+<h1 id="green">+ <%= crypto_two_hundred %>%</h1>
+<% elsif crypto_two_hundred < 0 %>
+<h1 id="red"><%= crypto_two_hundred %>%</h1>
+<% else %>
+<h1 id="black"><%= crypto_two_hundred %>%</h1>
+<% end %>
+</div>
+
+
+<div class="percentagebar">
+  <div class="insidepercentagebar" style="width:<%= red_percentage.to_i %>%"%></div>
+</div>
+
+
+<div class="advancingdeclining">
+<h3><span id="green">Advancing Assets: <%= in_the_green %> (<%= green_percentage.to_i %>%)</span> | 
+
+<span id="red">Declining Assets: <%= in_the_red %> (<%= red_percentage.to_i %>%)</span></h3>
+</div>
+
+<div class="advancingdeclining">
+<h3><span id="green">Biggest Gainer: <%= biggest_gainer_name %> <%= biggest_gainer_percentage %>%</span>  |
+
+<span id="red">Biggest Loser: <%= biggest_loser_name %> <%= biggest_loser_percentage %>%</span></h3>
+</div>
+<br><br><br><br><br><br><br><br>
+<div class="marketcap">
+<h3>Crypto 200 Total Market Cap: <%= number_to_currency(total_market_cap)  %></h3>
+</div>
+
+
+
+
+
+
+

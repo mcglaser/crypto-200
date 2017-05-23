@@ -1,0 +1,119 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+.body {
+    font-family: 'Lato', sans-serif;
+    color: #000000;
+    font-size: 20px;
+}
+
+
+
+
+.header h3 {
+    text-align: right;
+    font-family: 'Lato', sans-serif;
+    color: #000000;
+    font-size: 23px;
+    margin: 7px;
+}
+
+
+
+.logo {
+    width: 100%;
+
+    margin: 0px auto;
+    background-color: #ffffff;
+    text-align: center;
+   
+}
+
+
+
+
+.logo h1 {
+   font-family: 'Monoton';
+   font-size: 70px;
+   color: #e5c100;
+   word-spacing: 10px;
+   
+}
+
+
+.logo p {
+    text-align: center;
+    font-family: 'Krona One', sans-serif;
+    color: #000000;
+    font-size: 20px;
+}
+
+
+.crypto h1 {
+    text-align: center;
+    font-family: 'Lato', sans-serif;
+    font-size: 60px;
+    margin: 20px;
+}
+
+#green {
+    color: green;
+}
+
+#red {
+    color: red;
+}
+
+#black {
+    color: black;
+}
+
+
+.percentagebar {
+   margin-left: 33%;
+   margin-right: 33%;
+    width: auto;
+    background-color: green;
+}
+
+.insidepercentagebar {
+   
+
+    height: 30px;
+    background-color: red;
+    margin-left:auto; margin-right:0;
+}
+
+
+.advancingdeclining {
+    text-align: center;
+    font-family: 'Lato', sans-serif;
+    font-size: 20px;
+    margin: 20px;
+}
+
+.marketcap {
+    text-align: center;
+    font-family: 'Lato', sans-serif;
+    font-size: 20px;
+    margin: 20px;
+    color: black;
+}

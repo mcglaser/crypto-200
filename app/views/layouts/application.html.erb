@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>The Crypto 200</title>
+
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
+  
+<%= google_webfonts_init({
+    google: ['Monoton', "Krona One", "Lato"]
+  }) %>
+  
+  
+  
+</head>
+<body>
+<center>
+<%= yield %>
+</center>
+</body>
+</html>

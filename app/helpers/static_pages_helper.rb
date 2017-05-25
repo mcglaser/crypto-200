@@ -69,5 +69,24 @@ module StaticPagesHelper
          @percent_changes.min
      end
     
-  
+    def winners_losers_hash
+      combined = Hash[@names.zip(@percent_changes)].sort_by{|k,v| v}
+      return combined
+    end
+    
+    
+    def biggest_losers_names_and_percentage
+        winners_losers_hash[0..4]
+    end
+    
+    
+    def biggest_winners_names_and_percentage
+        winners_losers_hash.reverse[0..4]
+    end
+    
+    
+    
+    
+    
+    
 end

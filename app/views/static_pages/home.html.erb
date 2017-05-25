@@ -25,17 +25,40 @@
 
 
 <div class="advancingdeclining">
-<h3><span id="green">Advancing Assets: <%= in_the_green %> (<%= green_percentage.to_i %>%)</span> | 
+<h3>Advancing Assets: <span id="green"><%= in_the_green %> (<%= green_percentage.to_i %>%)</span> | 
 
-<span id="red">Declining Assets: <%= in_the_red %> (<%= red_percentage.to_i %>%)</span></h3>
+Declining Assets: <span id="red"><%= in_the_red %> (<%= red_percentage.to_i %>%)</span></h3>
 </div>
+
 
 <div class="advancingdeclining">
-<h3><span id="green">Biggest Gainer: <%= biggest_gainer_name %> <%= biggest_gainer_percentage %>%</span>  |
+  <h3>Biggest Gainers:<br></h3><br>
 
-<span id="red">Biggest Loser: <%= biggest_loser_name %> <%= biggest_loser_percentage %>%</span></h3>
+  <table>
+    <%    biggest_winners_names_and_percentage.each do |winner_name, winner_percentage| %>
+  <tr>
+    <td><%= winner_name %>  &nbsp&nbsp<span id="green"><%= winner_percentage %>%</span></td>
+       </tr>
+          <% end %>
+  </table>   
 </div>
-<br><br><br><br><br><br><br><br>
+
+
+
+<div class="advancingdeclining">
+  <h3>Biggest Decliners:<br></h3><br>
+
+  <table>
+    <%    biggest_losers_names_and_percentage.each do |loser_name, loser_percentage| %>
+  <tr>
+    <td><%= loser_name %>  &nbsp&nbsp<span id="red"><%= loser_percentage %>%</span></td>
+       </tr>
+          <% end %>
+  </table>   
+</div>
+
+
+<br>
 <div class="marketcap">
 <h3>Crypto 200 Total Market Cap: <%= number_to_currency(total_market_cap)  %></h3>
 </div>

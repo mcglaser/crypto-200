@@ -5,7 +5,7 @@
 
 <div class="logo">
     <h1>Crypto 200</h1>
-    <p>The 200 Largest Crypto Assests Indexed</p>
+    <p>The 200 Largest Crypto Assets Indexed</p>
 </div>
 
 <div class="crypto">
@@ -32,7 +32,7 @@ Declining Assets: <span id="red"><%= in_the_red %> (<%= red_percentage.to_i %>%)
 
 
 <div class="advancingdeclining">
-  <h3>Biggest Gainers:<br></h3><br>
+  <h3><span id="green">Biggest Gainers:</span><br></h3><br>
 
   <table>
     <%    biggest_winners_names_and_percentage.each do |winner_name, winner_percentage| %>
@@ -46,7 +46,7 @@ Declining Assets: <span id="red"><%= in_the_red %> (<%= red_percentage.to_i %>%)
 
 
 <div class="advancingdeclining">
-  <h3>Biggest Decliners:<br></h3><br>
+  <h3><span id="red">Biggest Decliners:</span><br></h3><br>
 
   <table>
     <%    biggest_losers_names_and_percentage.each do |loser_name, loser_percentage| %>

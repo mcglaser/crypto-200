@@ -30,8 +30,8 @@
 Declining Assets: <span id="red"><%= in_the_red %> (<%= red_percentage.to_i %>%)</span></h3>
 </div>
 
-
-<div class="advancingdeclining">
+<div class="winnerslosers">
+<div class="advancing">
   <h3><span id="green">Biggest Gainers:</span><br></h3><br>
 
   <table>
@@ -45,7 +45,7 @@ Declining Assets: <span id="red"><%= in_the_red %> (<%= red_percentage.to_i %>%)
 
 
 
-<div class="advancingdeclining">
+<div class="declining">
   <h3><span id="red">Biggest Decliners:</span><br></h3><br>
 
   <table>
@@ -55,6 +55,8 @@ Declining Assets: <span id="red"><%= in_the_red %> (<%= red_percentage.to_i %>%)
        </tr>
           <% end %>
   </table>   
+</div>
+
 </div>
 
 

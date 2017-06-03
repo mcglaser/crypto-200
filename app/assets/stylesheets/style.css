@@ -34,6 +34,31 @@ time, mark, audio, video {
     color: #000000;
     font-size: 23px;
     margin: 7px;
+    background-color: #ffffff;
+    border-color: #ffffff;
+}
+
+.hoverinfo {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  font-family: 'Lato', sans-serif;
+  font-size: 23px;
+  cursor: pointer;
+    width: 23%;
+}
+
+.hoverinfo p {
+  display: none;
+  color: #000000;
+}
+
+.hoverinfo:hover p {
+  background-color: #ffffff;
+  display: block;
+  width: 100%;
+  text-align: left;
+    font-size: 18px;
 }
 
 

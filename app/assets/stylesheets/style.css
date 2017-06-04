@@ -1,16 +1,4 @@
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
 	margin: 0;
 	padding: 0;
 	border: 0;
@@ -20,154 +8,118 @@ time, mark, audio, video {
 }
 
 .body {
-    font-family: 'Lato', sans-serif;
-    color: #000000;
-    font-size: 20px;
+	font-family: 'Lato', sans-serif;
+	color: #000000;
+	font-size: 20px;
 }
 
-
-
-
 .header h3 {
-    text-align: right;
-    font-family: 'Lato', sans-serif;
-    color: #000000;
-    font-size: 23px;
-    margin: 7px;
-    background-color: #ffffff;
-    border-color: #ffffff;
+	text-align: right;
+	font-family: 'Lato', sans-serif;
+	color: #000000;
+	font-size: 23px;
+	margin: 7px;
+	background-color: #ffffff;
+	border-color: #ffffff;
 }
 
 .hoverinfo {
-  position: absolute;
-  top: 15px;
-  right: 15px;
-  font-family: 'Lato', sans-serif;
-  font-size: 23px;
-  cursor: pointer;
-    width: 23%;
+	position: absolute;
+	top: 15px;
+	right: 15px;
+	font-family: 'Lato', sans-serif;
+	font-size: 23px;
+	cursor: pointer;
+	width: 23%;
 }
 
 .hoverinfo p {
-  display: none;
-  color: #000000;
+	display: none;
+	color: #000000;
 }
 
 .hoverinfo:hover p {
-  background-color: #ffffff;
-  display: block;
-  width: 100%;
-  text-align: left;
-  font-size: 18px;
-  margin-bottom: 18px;
+	background-color: #ffffff;
+	display: block;
+	width: 100%;
+	text-align: left;
+	font-size: 18px;
+	margin-bottom: 18px;
 }
-
-
 
 .logo {
-    width: 100%;
-
-    margin: 0px auto;
-    background-color: #ffffff;
-    text-align: center;
-   
+	width: 100%;
+	margin: 0px auto;
+	background-color: #ffffff;
+	text-align: center;
 }
-
-
-
-
-.logo h1 {
-   font-family: 'Monoton';
-   font-size: 70px;
-   color: #e5c100;
-   word-spacing: 10px;
-   
-}
-
-
-.logo p {
-    text-align: center;
-    font-family: 'Krona One', sans-serif;
-    color: #000000;
-    font-size: 20px;
-}
-
 
 .crypto h1 {
-    text-align: center;
-    font-family: 'Lato', sans-serif;
-    font-size: 60px;
-    margin: 70px;
+	text-align: center;
+	font-family: 'Lato', sans-serif;
+	font-size: 60px;
+	margin: 70px;
 }
 
 #green {
-    color: green;
+	color: green;
 }
 
 #red {
-    color: red;
+	color: red;
 }
 
 #black {
-    color: black;
+	color: black;
 }
 
-
 .percentagebar {
-   margin-left: 33%;
-   margin-right: 33%;
-    width: auto;
-    background-color: green;
-    
+	margin-left: 33%;
+	margin-right: 33%;
+	width: auto;
+	background-color: green;
 }
 
 .insidepercentagebar {
-   
-
-    height: 30px;
-    background-color: red;
-    margin-left:auto; margin-right:0;
+	height: 30px;
+	background-color: red;
+	margin-left: auto;
+	margin-right: 0;
 }
 
-
 .advancingdeclining {
-    text-align: center;
-    font-family: 'Lato', sans-serif;
-    font-size: 20px;
-
+	text-align: center;
+	font-family: 'Lato', sans-serif;
+	font-size: 20px;
 }
 
 .winnerslosers {
-    font-family: 'Lato', sans-serif;
-    font-size: 20px;
-    display: flex;
-    width: auto;
-    margin-top: 50px;
-    margin-left: 33%;
-    margin-right: 33%;
-    flex-wrap: wrap;
-
+	font-family: 'Lato', sans-serif;
+	font-size: 20px;
+	display: flex;
+	width: auto;
+	margin-top: 50px;
+	margin-left: 33%;
+	margin-right: 33%;
+	flex-wrap: wrap;
 }
 
-
-
 .advancing {
-    width: 200px;
-    margin: auto;
-    margin-top: 20px;
+	width: 200px;
+	margin: auto;
+	margin-top: 20px;
 }
 
 .declining {
-   width: 200px;
-   margin: auto;
-   margin-top: 20px;
- 
+	width: 200px;
+	margin: auto;
+	margin-top: 20px;
 }
 
 .marketcap {
-    text-align: center;
-    font-family: 'Lato', sans-serif;
-    font-size: 20px;
-    margin: 50px;
-    color: black;
+	text-align: center;
+	font-family: 'Lato', sans-serif;
+	font-size: 20px;
+	margin: 50px;
+	color: black;
 }

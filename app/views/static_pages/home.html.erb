@@ -1,77 +1,54 @@
-<div class="header">
-    <div class="hoverinfo">
-    <h3><span>About</span></h3>
-<p>Inspired by traditional stock market indexes such as the Dow and The S&P 500, The Crypto 200 is meant to gauge the overall crypto market direction in a quantifiable rule-based manner.</p>
+	<div class="header">
+		<div class="hoverinfo">
+			<h3><span>About</span></h3>
+			<p>Inspired by traditional stock market indexes such as the Dow and The S&P 500, The Crypto 200 is meant to gauge the overall crypto market direction in a quantifiable rule-based manner.</p>
+			<p>It combines the top 200 assets into a weighted average index using market caps to determine the individual asset weight relative to the rest of the market. The higher the market the cap, the more the percentage change is factored into The Crypto 200 average.</p>
+			<p>Cryptocurrencies and token assets alike are included in the average. Assets are automatically added and removed according to changing market cap totals. Data is updated across all assets in near real-time with major thanks to the CryptoMarketCap.com API.</p>
+			<p>Crypto 200 is a work in progress. Please send feedback and suggestions to hello [AT] crypto200.com</p>
+		</div>
+	</div>
+	<div class="logo">
+		<%= image_tag ("crypto200logo.png")%>
+	</div>
+	<div class="crypto">
+		<%if crypto_two_hundred > 0 %>
+		<h1 id="green">+ <%= crypto_two_hundred %>%</h1><%elsif crypto_two_hundred < 0 %>
+		<h1 id="red"><%= crypto_two_hundred %>%</h1><%else %>
+		<h1 id="black"><%= crypto_two_hundred %>%</h1><%end %>
+	</div>
 
-<p>It combines the top 200 assets into a weighted average index using market caps to determine the individual asset weight relative to the rest of the market. The higher the market the cap, the more the percentage change is factored into The Crypto 200 average.</p> 
 
-<p>Cryptocurrencies and token assets alike are included in the average. Assets are automatically added and removed according to changing market cap totals. Data is updated across all assets in near real-time with major thanks to the CryptoMarketCap.com API.</p> 
-
-<p>Crypto 200 is a work in progress. Please send feedback and suggestions to hello [AT] crypto200.com</p>
+  <div class="percentagebar">
+    <div class="insidepercentagebar" style="width:<%= red_percentage.to_i %>%"%></div>
   </div>
-</div>
 
 
-<div class="logo">
-  <%= image_tag ("crypto200logo.png")%>
-</div>
-
-<div class="crypto">
-<% if crypto_two_hundred > 0 %>
-<h1 id="green">+ <%= crypto_two_hundred %>%</h1>
-<% elsif crypto_two_hundred < 0 %>
-<h1 id="red"><%= crypto_two_hundred %>%</h1>
-<% else %>
-<h1 id="black"><%= crypto_two_hundred %>%</h1>
-<% end %>
-</div>
-
-
-<div class="percentagebar">
-  <div class="insidepercentagebar" style="width:<%= red_percentage.to_i %>%"%></div>
-</div>
-
-
-<div class="advancingdeclining">
-<h3>Advancing Assets: <span id="green"><%= in_the_green %> (<%= green_percentage.to_i %>%)</span> | 
-
-Declining Assets: <span id="red"><%= in_the_red %> (<%= red_percentage.to_i %>%)</span></h3>
-</div>
-
-<div class="winnerslosers">
-<div class="advancing">
-  <h3><span id="green">Biggest Gainers:</span><br></h3><br>
-
-  <table>
-    <%    biggest_winners_names_and_percentage.each do |winner_name, winner_percentage| %>
-  <tr>
-    <td><%= winner_name %>  &nbsp&nbsp<span id="green"><%= winner_percentage %>%</span></td>
-       </tr>
-          <% end %>
-  </table>   
-</div>
-
-
-
-<div class="declining">
-  <h3><span id="red">Biggest Decliners:</span><br></h3><br>
-
-  <table>
-    <%    biggest_losers_names_and_percentage.each do |loser_name, loser_percentage| %>
-  <tr>
-    <td><%= loser_name %>  &nbsp&nbsp<span id="red"><%= loser_percentage %>%</span></td>
-       </tr>
-          <% end %>
-  </table>   
-</div>
-
-</div>
-
-
-<br>
-<div class="marketcap">
-<h3>Crypto 200 Total Market Cap: <%= number_to_currency(total_market_cap)  %></h3>
-</div>
+	<div class="advancingdeclining">
+		<h3>Advancing Assets: <span id="green"><%= in_the_green %> (<%= green_percentage.to_i %>%)</span> | Declining Assets: <span id="red"><%= in_the_red %> (<%= red_percentage.to_i %>%)</span></h3>
+	</div>
+	<div class="winnerslosers">
+		<div class="advancing">
+			<h3><span id="green">Biggest Gainers:</span><br></h3><br>
+			<table>
+				<%biggest_winners_names_and_percentage.each do |winner_name, winner_percentage| %>
+				<tr>
+					<td><%= winner_name %>&nbsp;&nbsp;<span id="green"><%= winner_percentage %>%</span></td>
+				</tr><%end %>
+			</table>
+		</div>
+		<div class="declining">
+			<h3><span id="red">Biggest Decliners:</span><br></h3><br>
+			<table>
+				<%biggest_losers_names_and_percentage.each do |loser_name, loser_percentage| %>
+				<tr>
+					<td><%= loser_name %>&nbsp;&nbsp;<span id="red"><%= loser_percentage %>%</span></td>
+				</tr><%end %>
+			</table>
+		</div>
+	</div><br>
+	<div class="marketcap">
+		<h3>Crypto 200 Total Market Cap: <%= number_to_currency(total_market_cap)  %></h3>
+	</div>
 
 
 
